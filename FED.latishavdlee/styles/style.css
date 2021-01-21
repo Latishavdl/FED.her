@@ -1,0 +1,211 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/*Mobiele versie CSS*/
+
+body {
+    font-family: sans-serif;
+}
+
+@font-face {}
+
+nav img {
+    max-height: 3em;
+}
+
+/* Dropdown Button */
+div {
+    border: 2px solid gray;
+    padding: 2rem;
+    margin: 1rem;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+div.yay {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: red;
+    font-size: 1.2em;
+}
+
+a:focus {
+    border-color: greenyellow;
+}
+
+h2:focus {
+    border-color: greenyellow;
+}
+
+p:focus {
+    border-color: greenyellow;
+}
+
+button:focus {
+    border-color: greenyellow;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item img {
+    height: 7em;
+}
+
+nav li img {
+    min-height: 5em;
+}
+
+main img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer h3 {
+    color: white;
+}
+
+ul:last-of-type {
+    font-size: 0.7em;
+    padding: 1em;
+    color: white;
+}
+
+footer button {
+    margin-top: 1em;
+    background-color: indianred;
+    color: white;
+    padding: 0.7em;
+
+}
+
+footer button:hover {
+    background-color: red;
+}
+
+h2 {
+    padding-top: 0.5em;
+}
+
+
+.homepage article {
+    position: relative;
+}
+
+.homepage article h2 {
+    font-size: 1.75em;
+    font-family: 'Russo One', sans-serif;
+    text-align: left;
+    position: absolute;
+    bottom: 1em;
+    margin: 0;
+    padding: .5em;
+    text-align: left;
+    color: white;
+}
+
+@media (max-width: 50em) {
+
+.menu ul {
+    flex-direction: column;
+}
+
+}
+
+/* Web versie CSS*/
+
+@media (min-width: 50em) {
+
+    .homepage article h2 {
+        font-size: 4em;
+    }
+
+    .detailpage section {
+        display: grid;
+        grid-gap: 30px 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .homepage article h2 {
+        font-size: 4em;
+    }
+
+    .detailpage section {
+        display: grid;
+        grid-gap: 30px 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+/* Dropdown Button */
+div {
+    padding: 2rem;
+    margin: 1rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+div.menu {
+    opacity: 1;
+}
+
+.menu ul {
+    font-size: 1em;
+}
+
+
+/*Detailpagina styles*/
+
+.detailpage {
+    background-image: url("../images/achtergrondfoto.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.detailpage h2 {
+
+    font-size: 1.5em;
+    color: white;
+
+}
